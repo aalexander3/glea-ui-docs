@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { TextButton } from 'gleam-ui-react'
+import { NavItem, Navbar, Header } from 'gleam-ui-react'
 
-const Navbar = () => {
-
+const MyNavbar = () => {
+  const [ openSection, setSection ] = useState(null)
   return (
-    <div>
-      <Link to='/'><TextButton label='Home'></TextButton></Link>
-      <Link to='/buttons'><TextButton label='Buttons'></TextButton></Link>
-      <Link to='/icons'><TextButton label='Icons'></TextButton></Link>
-    </div>
+    <Navbar direction="vertical">
+      <Link to='/'><NavItem>Home</NavItem></Link>
+      <Link to='/buttons'><NavItem>Buttons</NavItem></Link>
+      <Link to='/icons'><NavItem>Icons</NavItem></Link>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default MyNavbar

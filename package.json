@@ -6,8 +6,10 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "gleam-ui-react": "^1.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-highlight": "^0.12.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
